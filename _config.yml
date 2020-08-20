@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Chia-Hao Lee"
-  avatar           : "/assets/image/Portrait_picture.jpg"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/image/chiahaolee.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am a Ph.D. researcher at UIUC. My reasearch focuses on studying 2D materials using scanning transmission electron microscopy with advanced image analysis methods including deep learning."
   location         : "Urbana, IL"
   email            : "chiahao3@illinois.edu"
