@@ -101,19 +101,19 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:chiahao3@illinois.edu"
+      url: "mailto:chiahao3@illinois.edu"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://chiahao3.github.io/"
+      url: "https://chiahao3.github.io/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/Harrey_CHL"
+      url: "https://twitter.com/Harrey_CHL"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/chiahao3"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
-      # url: "https://www.linkedin.com/in/chia-hao-lee-7410b7135/"
+      url: "https://www.linkedin.com/in/chia-hao-lee-7410b7135/"
 
 # Site Footer
 footer:
