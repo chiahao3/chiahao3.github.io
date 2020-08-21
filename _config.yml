@@ -99,8 +99,8 @@ author:
   location         : "Urbana, IL"
   email            : "chiahao3@illinois.edu"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+    - #label: "Email"
+      #icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:chiahao3@illinois.edu"
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -114,7 +114,9 @@ author:
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/chia-hao-lee-7410b7135/"
-
+    - label: "Google Scholar"
+      icon: "ai ai-fw ai-google-scholar"
+      url: https://scholar.google.com.tw/citations?user=Pv9sqLoAAAAJ
 # Site Footer
 footer:
   links:

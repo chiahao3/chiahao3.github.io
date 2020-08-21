@@ -242,7 +242,7 @@ body:hover .visually-hidden button {
   .fa-github,
   .fa-github-alt,
   .fa-github-square {
-    color: $github-color;
+    color: #ffffff; //$github-color
   }
 
   .fa-gitlab {
@@ -264,7 +264,7 @@ body:hover .visually-hidden button {
 
   .fa-linkedin,
   .fa-linkedin-in {
-    color: $linkedin-color;
+    color: #ffffff; //$linkedin-color
   }
 
   .fa-mastodon,
@@ -303,7 +303,7 @@ body:hover .visually-hidden button {
 
   .fa-twitter,
   .fa-twitter-square {
-    color: $twitter-color;
+    color: #ffffff; //$twitter-color
   }
 
   .fa-vimeo,
