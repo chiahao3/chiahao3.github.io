@@ -3,13 +3,14 @@ permalink: /about/
 title: "About"
 layout: single
 author_profile: true
-last_modified_at: 8/24/2020, 1:02:03 AM
+last_modified_at: 2020-08-24
 ---
 
 I am a PhD researcher in the Materials Science and Engineering department at UIUC since Fall 2017. I am working with [Prof. Pinshane Huang](https://huanglab.matse.illinois.edu/) on exploring the structure-property relationships in 2D materials through aberration-corrected STEM and advanced image processing techniques such as deep learning.
 
 <center>
-<img src="https://pubs.acs.org/na101/home/literatum/publisher/achs/journals/content/nalefd/2020/nalefd.2020.20.issue-5/acs.nanolett.0c00269/20200506/images/medium/nl0c00269_0006.gif"/>
+<a href="https://pubs.acs.org/doi/abs/10.1021/acs.nanolett.0c00269" title= "Deep Learning Enabled Strain Mapping of Single-Atom Defects in Two-Dimensional Transition Metal Dichalcogenides with Sub-Picometer Precision"
+><img src="https://pubs.acs.org/na101/home/literatum/publisher/achs/journals/content/nalefd/2020/nalefd.2020.20.issue-5/acs.nanolett.0c00269/20200506/images/medium/nl0c00269_0006.gif"/></a>
 
 [Nano Lett. 2020, 20, 5, 3369–3377](https://pubs.acs.org/doi/abs/10.1021/acs.nanolett.0c00269)
 </center>
