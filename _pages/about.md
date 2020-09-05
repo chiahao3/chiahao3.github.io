@@ -3,7 +3,7 @@ permalink: /about/
 title: "About"
 layout: single
 author_profile: true
-last_modified_at: 2020-08-24
+last_modified_at: 2020-09-04
 ---
 
 I am a PhD researcher in the Materials Science and Engineering department at UIUC since Fall 2017. I am working with [Prof. Pinshane Huang](https://huanglab.matse.illinois.edu/) on exploring the structure-property relationships in 2D materials through aberration-corrected STEM and advanced image processing techniques such as deep learning.
@@ -15,7 +15,4 @@ I am a PhD researcher in the Materials Science and Engineering department at UIU
 
 Prior to my PhD study, I was a Master's research assistant in the group of [Prof. Cheng-Yen Wen](http://www.mse.ntu.edu.tw/index.php?option=com_zoo&task=item&item_id=101&Itemid=896&lang=en) at the Department of Materials Science and Engineering in [National Taiwan University (NTU)](http://www.mse.ntu.edu.tw/index.php?lang=en). For my Master's thesis I designed and built an ultra-high vacuum CVD system so that I can [synthesized graphene on nickel silicide substrate without interface oxidation](http://www.mse.ntu.edu.tw/~cwen/Chia-Hao_Lee.html). I've also been employed as a TEM teaching assistant for new user training and assisted operations by the MSE department throughout my Master's study in NTU.
 
-<center><figure class="align-center">
-  <img src="https://lh3.googleusercontent.com/wm4BewXGETRxg_jORbajDlgbComS5JGwgk1_6DBruyIPLMAkLTi8NoFMys25W_irmWWEfIlPDSKGwPs5-d7eSNXaj6Xzwncxe0TsjZ_su9WgZZZGCmDD44Qp0TkIg8dzrtp5g3_6oS3IDK2RImV7-mXtzTzyfMTGJQbYyE1fDtWlKOa0GZFEcrvp2bn18Jf9iRvR-m-apltR6KJauKdAliOJVZ4pwFtcj_K0SVl6_AhS10lqCUogDPmMAMm_Ze1pSVE_eQQ_yVFh1lpqs9T_J3Pez9KPGz6wg_jCUS6bEtTb5Famgmups0WFM-FgSOLvtjhL1yWyibIfO9LsdfT2OJwvw-IRmY4ERQgdPgNMI9uDJyhPU3KYp6bH0y8w4ffhPmpp7chBO6_J-FvrJ1bvBtWMkLvCPnrZvAKYUJQ2mpExtWqm_RCDAFRMX-rahQ9b1p_VmjeTfX0Ox9alRZmTOwdww4xt3x_AzIBA0KWJ6E2BS20JaaH6DWpzxf6bXH69kXgHU4B_8vOFCU2-dhG3WaHJChaPtTpR30bWmeFT-zKzAkyCXnYFDA2PsVQg6YT74Ccr2qVjzwHsDdQYS9AqVv4-QRfUsmnjC3pF1lj69t47P7u6rWa8XyRpnOolehuVIDL2NQSPjG8ZOFFAqjbxaTvaJvknvJIClxTHqJUjVzb5imoPJTZoQ-nJDkVqQQ=w1386-h780-no?authuser=0" alt="">
-  <figcaption><a href="http://www.youtube.com/watch?v=NZK7RBcdkT8" title="How I Built My Ultra-High Vacuum System"> How I Built My Ultra-High Vacuum System</a></figcaption>
-</figure></center>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/NZK7RBcdkT8?controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
