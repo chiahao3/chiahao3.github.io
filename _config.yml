@@ -103,9 +103,12 @@ author:
     - #label: "Email"
       #icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:chiahao3@illinois.edu"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://chiahao3.github.io/"
+    - #label: "Website"
+      #icon: "fas fa-fw fa-link"
+      #url: "https://chiahao3.github.io/"
+    - label: "Microscopy blog (觀物以鏡)"
+      icon: "fab fa-fw fa-blogger"
+      url: "https://microscopynotes.blogspot.com/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/Harrey_CHL"
@@ -117,7 +120,7 @@ author:
       url: "https://www.linkedin.com/in/chia-hao-lee-7410b7135/"
     - label: "Google Scholar"
       icon: "ai ai-fw ai-google-scholar"
-      url: https://scholar.google.com.tw/citations?user=Pv9sqLoAAAAJ
+      url: "https://scholar.google.com.tw/citations?user=Pv9sqLoAAAAJ"
 # Site Footer
 footer:
   links:
