@@ -15,18 +15,35 @@ toc_sticky: true
 ## TL; DR
 > **I summarized 7 ways to convert the emd files generated from Velox that developed by Thermo Fisher (former FEI).**
 
-1. If you can code in Python, see section 3 or 4, you’ll have the full access to the emd data (image, spectrum) and metadata  (acquisition parameters)
-2. If you can code in Matlab, see sectio 5. No metadata support for now.
-3. If you don’t feel like coding and just want a simple exe to batch convert emd into 16-bit tiff, see section 2. It has the ability to export every slice in image series as well.
-4. If you’re lucky enough with an access to Velox, section 1 provides some exportation details. Besides, Velox software provides the easiest and fastest way to export images with scale bars.
-5. If you’re testing your limit and having a lot of patience, see section 6 or 7 for imageJ and DM approaches.
+1. If you can code in Python, see section [3](#3-python-hyperspy) or [4](#4-python-openncem), you’ll have the full access to the emd data (image, spectrum) and metadata  (acquisition parameters)
+2. If you can code in Matlab, see section [5](#5-matlab-emd-reader). No metadata support for now.
+3. If you don’t feel like coding and just want a simple exe to batch convert emd into 16-bit tiff, see section [2](#2-thermo-fisher-application-batchexportexe). It has the ability to export every slice in image series as well.
+4. If you’re lucky enough with an access to Velox, section [1](#1-velox-software) provides some exportation details. Besides, Velox software provides the easiest and fastest way to export images with scale bars.
+5. If you’re testing your limit and being very adventurous, see section [6](#6-imagej-emd-class-reader) or [7](#7-digital-micrograph-gatan-dm-emd-reader) for imageJ and DM approaches.
+
+## Table
+
+|          Method          | Open access | Batch process | Image | i/o image series | Spectrum | Metadata |
+|:------------------------:|:-----------:|:-------------:|:-----:|:----------------:|:--------:|:--------:|
+|           Velox          |      X      |       O       |   O   |        O/X       |     O    |     O    |
+|      BatchExport.exe     |      O      |       O       |   O   |        O/O       |     X    |     X    |
+|     Python: HyperSpy     |      O      |   O, script   |   O   |    O/O, script   |     O    |     O    |
+|     Python: OpenNCEM     |      O      |   O, script   |   O   |    O/O, script   |     X    |  O, some |
+|    Matlab: EMD reader    |      O      |   O, script   |   O   |        X/X       |     X    |     X    |
+| ImageJ: EMD class reader |      O      |   O, script   |   O   |    O/O, script   |     X    |     X    |
+|    Digital Micrograph    |      O      |   O, script   |   O   |     Not sure     |     X    |     O    |
+
+>Note:
+* The ability to export full stack of image series is important for further process like drift correction.
+* Scripting skill is the game changer. Popular languages like Python and Matlab are both great options. ImageJ uses Java, while DM has their own scripting language.
 
 ## 1. Velox software
 > [Velox software](https://www.thermofisher.com/us/en/home/electron-microscopy/products/software-em-3d-vis/velox-software.html)
 * Developed by Thermo Fisher, **licensed software**
 * Provides the simplest way to export images with scale bar, data bar, and any annotations
-* Export emd images into png, jpg, 8-bit(32-bit RGBA) TIFF and 16-bit TIFF
+* Export emd images into png, jpg, 8-bit (32-bit RGBA) TIFF and 16-bit TIFF
 * It can NOT export the image series. Only the last frame will be exported.
+* Current versions (2.12 or newer) have the option of "Auto export" that convert emd experiment into 16-bit raw TIFF, which is great! But it still can't export the whole image series.
 * See future post for detailed comparison of 3 export options available by Velox
 
 ## 2. Thermo Fisher application: BatchExport.exe
@@ -39,7 +56,7 @@ toc_sticky: true
 ## 3. Python: HyperSpy
 > [http://hyperspy.org/](http://hyperspy.org/hyperspy-doc/current/user_guide/io.html?highlight=data%20format#emd)
 * **Kudos to HyperSpy team that makes this wonderful package!**
-* By far, I think this is the most flexible and useful approach. You can get every image, spectrum, metadata, and do all kinds of post-processing easily.
+* By far, I think this is the most flexible and powerful approach. You can get every image, spectrum, metadata, and do all kinds of post-processing easily.
 * Hyperspy has its GUI option as well.
 * Some Python knowledge is needed, but it's definitely worth it.
 * I'll upload my own emd2tiff script to my GitHub repo in the near future
@@ -48,13 +65,13 @@ toc_sticky: true
 > [https://github.com/ercius/openNCEM/tree/master/ncempy/io](https://github.com/ercius/openNCEM/tree/master/ncempy/io)
 * Developed by Dr. Peter Ercius from NCEM
 * A collection of packages and tools for electron microscopy data analysis
-* **I haven’t test this yet.**
+* The emdVelox class can import images and image series with some metadata. No spectra support yet.
 
 ## 5. Matlab: EMD reader
 > [https://github.com/sezelt/matlab_Velox_reader](https://github.com/sezelt/matlab_Velox_reader)
 * Developed by Dr. Steven Eric Zeltmann from NCEM
 * Matlab function that import image data from Velox emd
-* **I haven’t test this yet.**
+* Works for single image. No spectra, metadata, or image series support yet.
 
 ## 6. ImageJ: EMD class reader
 > [Google Drive Link](https://drive.google.com/drive/folders/1cxRaU6qhh-1PWrfy6QwUnNhLPKKaoVg8?usp=sharing)
@@ -73,5 +90,4 @@ Some skills of building C libraries with command line are needed
 * **I haven’t test this yet.**
 
 ## Summary
-
 Importing the experimental data is crucial but can also be quite tedius if your only option is to right-click and export every emd file. Thanks to all the developer that built these wonderful tools for us to easily access the information without much limitation! Let me know if you have any other tricks to share, so that I can make this post more complete, much appreciated!
